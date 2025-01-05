@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrow</title>
+    <style>
+        #bgvideo{
+            width:100%;
+            position: fixed;
+        }
+        .videoOver{
+            opacity: 0;
+            transition: all 2s;
+            -moz-transition: height 1s ease;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        let isVideoPlaying = false;
+        // const vid = document.getElementById("bgvideo");
+        let scroll=0;
+        window.addEventListener("scroll", eventHandle);
+
+        function eventHandle(event){
+            const vid = document.getElementById("bgvideo");
+            scroll = this.scrollY;
+            console.log(scroll);
+            vid.play();
+            isVideoPlaying=true;
+            if(scroll > vid.scrollHeight && isVideoPlaying){
+                window.removeEventListener("scroll", eventHandle);
+                vid.pause();
+                vid.classList.add("videoOver");
+                isVideoPlaying = false;
+            }
+        }
+    </script>
+    
+  </head>
+  <body>
+
+    <video muted loop id="bgvideo" src="./assets/EnguProjDeb.mp4"></video>
+</body>
+</html>

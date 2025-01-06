@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+#logo{
+  float: left;
+}
+.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #100f0f;
+  overflow:auto;
+  text-transform: uppercase;
+  font-family: Trebuchet MS;
+  overflow:auto;
+  font-size: medium;
+  top: 0%;
+}
+
+li {
+  float: right;
+}
+ 
+li a {
+  display: block;
+  color: rgb(205, 197, 197);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #1a1818;
+  color: #ff6200;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  padding: 0px;
+}
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: rgb(205, 197, 197);
+  padding: 14px 16px;
+  background-color: #100f0f;
+  font-family: Trebuchet MS;
+  margin: 0;
+  text-transform: uppercase;
+  overflow:hidden;
+  height:fit-content;
+  font-size:medium;
+  padding: 0px;
+}
+.dropdown:hover .dropbtn {
+  background-color: #1a1818;
+  color: #ff6200;
+  padding: 0px;
+}
+
+.dropdown-content {
+  padding: 0px;
+  display: none;
+  position: absolute;
+  background-color: #1a1818;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  padding: 0px;
+  float: none;
+  color: rgb(205, 197, 197);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #171414;
+  color: #a84608;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  padding: 0px;
+}
+
+.fa {
+  padding: 7px;
+  margin: 5px;
+  margin-left: 10px;
+  font-size: 3px;
+  width: 20px;
+  text-align: center;
+  text-decoration:none;
+  border-radius: 50%;
+  background: #2e2e30;
+  color: rgb(205, 197, 197);
+
+}
+.fa:hover {
+  opacity: 0.5;
+}
+
+.head1{
+    color: #ff6200;
+    opacity: 0.3;
+    font-family: Anton;
+    animation: Slidein 0.3s ease-in;
+    font-size: 150px;
+    padding: 0;
+    margin: 0;
+}
+.head2{
+    color: aliceblue;
+    opacity: 0.6;
+    font-family: Anton;
+    font-size: 50px;
+    transform: translate(30px,-85px);
+    animation: Slidein 0.4s;
+}
+.head11{
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-bottom: 0px;
+}
+.head22{
+    margin-top: 0px;
+    margin-left: 270px;
+}
+@keyframes Slidein{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+
+    }
+}

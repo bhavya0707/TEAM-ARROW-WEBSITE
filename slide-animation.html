@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog Arrow</title>
+    <script defer src="app.js"></script>
+    <style>
+        .container {
+        position: relative;
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+        }
+
+        .card{
+        cursor: default;
+        display: inline-block;
+        max-height: 400px;
+        max-width:500px;
+        border-radius: 30px;
+        background-color: #FFAB40;  
+        font-size: 30px;
+        overflow: hidden;
+        align-content: center;
+        margin: 30px;
+        background-image: linear-gradient(135deg, #FFAB40, #E08B20);
+        }
+
+        .card div{
+        height:800px;
+        padding: 30px;
+        display: inherit;
+        transform: translateY();
+        transition: all 0.5s;
+        }
+
+        .card div:hover{
+        transform: translateY(-20%);
+        transition: all 1s;
+        background-color: #FF8C00;
+        }
+
+        div img{
+        position:inherit;
+        max-width : 500px;
+        left: 50%;
+        }
+
+        .next{
+        height : 30px;
+        }
+        .hidden{
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-100%);
+        transition: all 1s;
+        }
+        .show{
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateX(0);
+        }
+
+        div div a{
+        margin-top: 50px;
+        }
+    </style>
+  </head>
+  <body bgcolor="#202020">
+    <div class="container"> 
+        <div class="card hidden">
+          <div>
+            <img src="aerothon lgo.png" />
+            <h2>How we work</h2>
+            a short note on how we work
+            <br />
+            <a>Read more <img class="next" src="next.png" /></a>
+          </div>
+        </div>
+        <div class="card hidden">
+          <div>
+            <img src="aerothon lgo.png" />
+            <h2>How we work</h2>
+            a short note on how we work
+            <br />
+            <a>Read more <img class="next" src="next.png" /></a>
+          </div>
+        </div>
+        <div class="card hidden">
+          <div>
+            <img src="aerothon lgo.png" />
+            <h2>How we work</h2>
+            a short note on how we work
+            <br />
+            <a>Read more <img class="next" src="next.png" /></a>
+          </div>
+        </div>
+        <div class="card hidden">
+          <div>
+            <img src="aerothon lgo.png" />
+            <h2>How we work</h2>
+            a short note on how we work
+            <br />
+            <a>Read more <img class="next" src="next.png" /></a>
+          </div>
+        </div>
+        <div class="card hidden">
+          <div>
+            <img src="aerothon lgo.png" />
+            <h2>How we work</h2>
+            a short note on how we work
+            <br />
+            <a>Read more <img class="next" src="next.png" /></a>
+          </div>
+        </div>
+        <div class="card hidden">
+          <div>
+            <img src="aerothon lgo.png" />
+            <h2>How we work</h2>
+            a short note on how we work
+            <br />
+            <a>Read more <img class="next" src="next.png" /></a>
+          </div>
+        </div>
+        <div class="card hidden">
+          <div>
+            <img src="aerothon lgo.png" />
+            <h2>How we work</h2>
+            a short note on how we work
+            <br />
+            <a>Read more <img class="next" src="next.png" /></a>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
